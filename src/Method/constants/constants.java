@@ -10,12 +10,12 @@ public class constants {
         final int age = 56;
         System.out.println(age);
 
-        age = 65; // cannot change the age value because of final keyword
+    //    age = 65; // cannot change the age value because of final keyword
 
-        final string name = "vicky";
+        final String name = "vicky";
         System.out.println(name);
 
-        name = "Rocky"; // it should not allow because of final and the name would be constant as "vicky"
+     //   name = "Rocky"; // it should not allow because of final and the name would be constant as "vicky"
 
     }
 }
