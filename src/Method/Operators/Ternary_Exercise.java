@@ -11,12 +11,12 @@ public class Ternary_Exercise {
         // If student score less than 49 the grade will  be 'F'
 
         int score = 67;
-        String result = (score >= 90) ? "A" : (score >=80) ? "B" : (score >= 70) ? "C" : (score >=60) ? "D" : (score >=50) ? "E" : "F" ;
-        System.out.println("The Grade is" +result);
+        String result = (score >= 90) ? "A" : (score >= 80) ? "B" : (score >= 70) ? "C" : (score >= 60) ? "D" : (score >= 50) ? "E" : "F";
+        System.out.println("The Grade is" + result);
 
         //Another Example Eligible to vote program
         int age = 13;
         String Voting = (age >= 18) ? "Eligible to vote" : "Not-Eligible to vote";
-        System.out.println("The Voting status is: " +Voting);
+        System.out.println("The Voting status is: " + Voting);
     }
 }
