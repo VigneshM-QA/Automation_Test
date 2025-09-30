@@ -7,7 +7,7 @@ public class Triangle_program {
         // Check the Triangle which is Equilateral, Isoceles or Isolene
         // 3 sides equal is Equilateral triangle
         // 2 sides equal is Isoceles
-        // all different is Isolene
+        // all different is Scalene
         //Input -> taking 3 Sides as Side1, Side2, Side3
         //Logic
         Scanner sc = new Scanner(System.in);
@@ -22,8 +22,10 @@ public class Triangle_program {
             System.out.println("It is Equilateral triangle");
         } else if (side1 == side2 || side2 == side3 || side3 == side1) {
             System.out.println("It is Isoceles triange");
+        } else if (side1 <= 0 || side2 <= 0 || side3 <= 0) {
+            System.out.println("Incorrect Data: The Length value should be positive");
         } else {
-            System.out.println("It is Isolene triangle");
+            System.out.println("It is Scalene triangle");
         }
         sc.close();
     }
