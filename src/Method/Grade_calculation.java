@@ -13,22 +13,26 @@ public class Grade_calculation {
         Scanner sc = new Scanner(System.in);
         System.out.println("Marks Scored: ");
         int Marks = sc.nextInt();
-
+        char Grade = 'F';
         if (Marks >= 90 && Marks < 100) {
-            System.out.println("Grade is A");
+            Grade = 'A';
         } else if (Marks >= 80 && Marks < 89) {
-            System.out.println("Grade is B");
+           Grade = 'B';
         } else if (Marks>=70 && Marks<79) {
-            System.out.println("Grade is C");
+            Grade = 'C';
         } else if (Marks>=60 && Marks<69) {
-            System.out.println("Grad is D");
+            Grade = 'D';
         }
         else if (Marks>=50 && Marks<60) {
-            System.out.println("Grad is E");
+            Grade = 'E';
+        }
+        else if (Marks >100 || Marks<=0) {
+            Grade = 'O';
         }
             else {
-            System.out.println("Grade is Fail");
+            Grade = 'F';
         }
+        System.out.println("Your Grade is:" +Grade);
         sc.close();
     }
 }
